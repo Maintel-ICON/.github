@@ -1,0 +1,85 @@
+name: Task
+description: Create a task or work item to be completed
+title: "[Task]: "
+labels: ["task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for creating a task! Please provide details about the work to be done.
+  
+  - type: textarea
+    id: task-description
+    attributes:
+      label: Task Description
+      description: A clear and concise description of the task
+      placeholder: Describe what needs to be done
+    validations:
+      required: true
+  
+  - type: textarea
+    id: objectives
+    attributes:
+      label: Objectives
+      description: What are the goals or objectives of this task?
+      placeholder: |
+        - Objective 1
+        - Objective 2
+        - Objective 3
+    validations:
+      required: true
+  
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: What conditions must be met for this task to be considered complete?
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+        - [ ] Criterion 3
+    validations:
+      required: true
+  
+  - type: textarea
+    id: subtasks
+    attributes:
+      label: Sub-tasks
+      description: Break down the task into smaller sub-tasks if applicable
+      placeholder: |
+        - [ ] Sub-task 1
+        - [ ] Sub-task 2
+        - [ ] Sub-task 3
+    validations:
+      required: false
+  
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List any dependencies or blockers for this task
+      placeholder: This task depends on...
+    validations:
+      required: false
+  
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or references about the task here
+      placeholder: Any additional information that would be helpful
+    validations:
+      required: false
+  
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: What is the priority of this task?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: false

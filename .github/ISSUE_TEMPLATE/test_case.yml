@@ -1,0 +1,98 @@
+name: Test Case
+description: Document a test case or testing scenario
+title: "[Test]: "
+labels: ["test", "test-case"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for documenting a test case! Please provide details about the test scenario.
+  
+  - type: textarea
+    id: test-description
+    attributes:
+      label: Test Description
+      description: A clear and concise description of what this test case covers
+      placeholder: Describe the purpose of this test case
+    validations:
+      required: true
+  
+  - type: textarea
+    id: preconditions
+    attributes:
+      label: Preconditions
+      description: What conditions or setup must be in place before executing this test?
+      placeholder: |
+        - Precondition 1
+        - Precondition 2
+    validations:
+      required: false
+  
+  - type: textarea
+    id: test-steps
+    attributes:
+      label: Test Steps
+      description: Detailed steps to execute this test case
+      placeholder: |
+        1. Step 1
+        2. Step 2
+        3. Step 3
+    validations:
+      required: true
+  
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: Expected Result
+      description: What should happen when the test is executed successfully?
+      placeholder: Describe the expected outcome
+    validations:
+      required: true
+  
+  - type: textarea
+    id: test-data
+    attributes:
+      label: Test Data
+      description: What data is needed to execute this test?
+      placeholder: List any required test data
+    validations:
+      required: false
+  
+  - type: dropdown
+    id: test-type
+    attributes:
+      label: Test Type
+      description: What type of test is this?
+      options:
+        - Unit Test
+        - Integration Test
+        - End-to-End Test
+        - Performance Test
+        - Security Test
+        - Regression Test
+        - Smoke Test
+        - Other
+    validations:
+      required: false
+  
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: What is the priority of this test case?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: false
+  
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or notes about the test case here
+      placeholder: Any additional information that would be helpful
+    validations:
+      required: false
