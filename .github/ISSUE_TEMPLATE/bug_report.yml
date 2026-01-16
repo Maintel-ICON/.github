@@ -1,6 +1,6 @@
 name: Bug Report
 description: Report a bug or issue with the project
-title: "[Bug]: "
+title: "🐞[Bug]: "
 labels: ["bug"]
 body:
   - type: markdown
