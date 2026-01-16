@@ -43,16 +43,6 @@ body:
         |                 |                        | [ ]       |
     validations:
       required: true
-
-  - type: checkboxes
-    id: tests
-    attributes:
-      label: Tests required
-      description: You may select more than one.
-      options:
-        - label: step1
-          required: true
-        - label: Black cat
   
   - type: textarea
     id: test-data
