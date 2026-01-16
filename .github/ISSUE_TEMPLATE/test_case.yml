@@ -43,6 +43,13 @@ body:
         |                 |                        | [ ]       |
     validations:
       required: true
+
+  - type: checkboxes
+    id: tests
+    options:
+      - label: step1
+        required: true
+      - label: **Black cat**
   
   - type: textarea
     id: test-data
