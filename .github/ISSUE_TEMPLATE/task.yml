@@ -1,7 +1,8 @@
 name: Task
 description: Create a task or work item to be completed
-title: "[Task]: "
+title: "📋[Task]: "
 labels: ["task"]
+type: task
 body:
   - type: markdown
     attributes:
@@ -30,56 +31,10 @@ body:
       required: true
   
   - type: textarea
-    id: acceptance-criteria
-    attributes:
-      label: Acceptance Criteria
-      description: What conditions must be met for this task to be considered complete?
-      placeholder: |
-        - [ ] Criterion 1
-        - [ ] Criterion 2
-        - [ ] Criterion 3
-    validations:
-      required: true
-  
-  - type: textarea
-    id: subtasks
-    attributes:
-      label: Sub-tasks
-      description: Break down the task into smaller sub-tasks if applicable
-      placeholder: |
-        - [ ] Sub-task 1
-        - [ ] Sub-task 2
-        - [ ] Sub-task 3
-    validations:
-      required: false
-  
-  - type: textarea
-    id: dependencies
-    attributes:
-      label: Dependencies
-      description: List any dependencies or blockers for this task
-      placeholder: This task depends on...
-    validations:
-      required: false
-  
-  - type: textarea
     id: additional-context
     attributes:
       label: Additional Context
       description: Add any other context, screenshots, or references about the task here
       placeholder: Any additional information that would be helpful
-    validations:
-      required: false
-  
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      description: What is the priority of this task?
-      options:
-        - Low
-        - Medium
-        - High
-        - Critical
     validations:
       required: false
