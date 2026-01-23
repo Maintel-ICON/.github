@@ -1,0 +1,40 @@
+name: Test Step
+description: Document a test step and expected outcome
+title: "👣[Test Step]: "
+labels: ["test"]
+type: teststep
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for documenting a test step! Please provide details about the test step.
+
+  - type: input
+    id: test-step
+    attributes:
+      label: Step
+      description: A clear and concise description of what the test step is
+      placeholder: Describe the step to be taken
+    validations:
+      required: true
+
+  - type: input
+    id: test-result
+    attributes:
+      label: Expected Result
+      description: A clear and concise description of what the expected result of the step is
+      placeholder: Describe the expected result of the step
+    validations:
+      required: true
+
+  - type: dropdown
+    id: test-outcome
+    attributes:
+      label: Outcome
+      description: What was the outcome?
+      options:
+        - Pass
+        - Fail
+        - "N/A"
+    validations:
+      required: true
