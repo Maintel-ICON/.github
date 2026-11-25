@@ -2,7 +2,7 @@ name: Test Case
 description: Document a test case or testing scenario
 title: "✅[Test]: "
 labels: ["test", "test-case"]
-type: testcase
+type: "Test Case"
 body:
   - type: markdown
     attributes:
