@@ -2,7 +2,7 @@ name: Task
 description: Create a task or work item to be completed
 title: "📋[Task]: "
 labels: ["task"]
-type: task
+type: Task
 body:
   - type: markdown
     attributes:
