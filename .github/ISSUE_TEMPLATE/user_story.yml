@@ -2,7 +2,7 @@ name: User Story
 description: Create a user story to capture a feature from the user's perspective
 title: "📖[User Story]: "
 labels: ["user-story"]
-type: userstory
+type: "User Story"
 body:
   - type: markdown
     attributes:
